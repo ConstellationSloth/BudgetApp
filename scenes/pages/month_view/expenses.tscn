@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dnug4208s73od"]
+
+[ext_resource type="Script" uid="uid://b0savd5e0cvdg" path="res://scenes/pages/month_view/expenses.gd" id="1_s0abt"]
+
+[node name="Expenses" type="VBoxContainer" unique_id=694088726]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s0abt")
+metadata/_tab_index = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=299361302]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="HBoxContainer" unique_id=945920902]
+layout_mode = 2
+text = "<"
+
+[node name="Title" type="Label" parent="HBoxContainer" unique_id=80339989]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Total Monthly Expenses"
+vertical_alignment = 1
+
+[node name="Amount" type="Label" parent="HBoxContainer" unique_id=1086302491]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "$1775"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=169124049]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=1577090670]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=357223987]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/MarginContainer/HBoxContainer" unique_id=1638857182]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/HBoxContainer" unique_id=1311666370]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/MarginContainer/HBoxContainer" unique_id=857866827]
+layout_mode = 2

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cw4xcb5fh0k4c"]
+
+[ext_resource type="Script" uid="uid://btnggot16rdow" path="res://scenes/pages/month_view/month_view.gd" id="1_c7amr"]
+[ext_resource type="PackedScene" uid="uid://57lkr8jsfitm" path="res://addons/calendar_popup/date_selector/date_selector.tscn" id="2_wblbf"]
+[ext_resource type="PackedScene" uid="uid://dnug4208s73od" path="res://scenes/pages/month_view/expenses.tscn" id="3_ch1ys"]
+[ext_resource type="PackedScene" uid="uid://b65ks6m32jkc7" path="res://scenes/pages/month_view/add_transaction.tscn" id="4_c7amr"]
+
+[node name="MonthView" type="VBoxContainer" unique_id=1078143629]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_c7amr")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1759685388]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="HBoxContainer" unique_id=1993776004]
+layout_mode = 2
+text = "<"
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1069186807]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Month View"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TopRow" type="HBoxContainer" parent="." unique_id=869914496]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DateSelector" parent="TopRow" unique_id=75557816 instance=ExtResource("2_wblbf")]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="TopRow" unique_id=299544940]
+layout_mode = 2
+size_flags_horizontal = 3
+current_tab = 0
+
+[node name="Expenses" parent="TopRow/TabContainer" unique_id=694088726 instance=ExtResource("3_ch1ys")]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=1428768013]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Add Transaction" parent="TabContainer" unique_id=1758260056 instance=ExtResource("4_c7amr")]
+layout_mode = 2

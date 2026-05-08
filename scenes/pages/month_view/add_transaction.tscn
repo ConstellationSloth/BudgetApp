@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b65ks6m32jkc7"]
+
+[ext_resource type="Script" uid="uid://qj6tv35d4d2q" path="res://scenes/pages/month_view/add_transaction.gd" id="1_4ag3x"]
+[ext_resource type="Script" uid="uid://c7jj4c20wprcu" path="res://scenes/common/category_tree/category_tree.gd" id="1_0731u"]
+
+[node name="Add Transaction" type="HBoxContainer" unique_id=1758260056]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_4ag3x")
+metadata/_tab_index = 0
+
+[node name="Tree" type="Tree" parent="." unique_id=1497077433]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_0731u")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=531484937]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TransactionBox" type="VBoxContainer" parent="ScrollContainer" unique_id=2027997611]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TransactionList" type="VBoxContainer" parent="ScrollContainer/TransactionBox" unique_id=1134323942]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NewTransaction" type="Button" parent="ScrollContainer/TransactionBox/TransactionList" unique_id=638886682]
+layout_mode = 2
+text = "+"
+
+[node name="CreateTransactions" type="Button" parent="ScrollContainer/TransactionBox" unique_id=1078157837]
+layout_mode = 2
+text = "Add"

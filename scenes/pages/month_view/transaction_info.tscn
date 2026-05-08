@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bnhhjdk5iqy7w"]
+
+[ext_resource type="Script" uid="uid://b6782g4kti1bm" path="res://scenes/pages/month_view/transaction_info.gd" id="1_hkd4n"]
+
+[node name="TransactionInfo" type="MarginContainer" unique_id=1982062312]
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_hkd4n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2040282209]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+
+[node name="Amount" type="Label" parent="HBoxContainer" unique_id=1449901042]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+vertical_alignment = 1
+
+[node name="Percentage" type="Label" parent="HBoxContainer" unique_id=533655851]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_vertical = 1
+vertical_alignment = 1
+
+[node name="Day" type="Label" parent="HBoxContainer" unique_id=705187590]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_vertical = 1
+vertical_alignment = 1
+
+[node name="DeleteButton" type="Button" parent="HBoxContainer" unique_id=1183094236]
+layout_mode = 2
+text = "Delete"

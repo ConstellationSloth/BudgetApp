@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgfflwjyha5wj"]
+
+[ext_resource type="Theme" uid="uid://yavn5e8lk1q5" path="res://assets/my_scifi/my_theme.tres" id="1_w20r6"]
+[ext_resource type="Script" uid="uid://c7jj4c20wprcu" path="res://scenes/common/category_tree/category_tree.gd" id="2_g1ljk"]
+
+[node name="CategoryTree" type="Tree" unique_id=1000634292]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_w20r6")
+theme_override_constants/inner_item_margin_left = 8
+script = ExtResource("2_g1ljk")

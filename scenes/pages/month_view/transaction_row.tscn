@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://b1kxcu2i3rc4t"]
+
+[ext_resource type="Script" uid="uid://dputy21xbeiqw" path="res://scenes/pages/month_view/transaction_row.gd" id="1_na21p"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_h2yge"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_1bvp3"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_lquwl"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_7mycd"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_272bh"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_5vw27"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_kek77"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4c57u"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_efxa6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg77c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycdy4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w48qg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vivmo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cqfq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yaehf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mycd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_272bh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5vw27"]
+
+[node name="TransactionRow" type="HBoxContainer" unique_id=2109928573]
+size_flags_horizontal = 3
+script = ExtResource("1_na21p")
+
+[node name="SpinBox" type="SpinBox" parent="." unique_id=1928678405]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/buttons_width = 0
+theme_override_icons/updown = SubResource("ImageTexture_h2yge")
+theme_override_icons/up = SubResource("ImageTexture_1bvp3")
+theme_override_icons/up_hover = SubResource("ImageTexture_lquwl")
+theme_override_icons/up_pressed = SubResource("ImageTexture_7mycd")
+theme_override_icons/up_disabled = SubResource("ImageTexture_272bh")
+theme_override_icons/down = SubResource("ImageTexture_5vw27")
+theme_override_icons/down_hover = SubResource("ImageTexture_kek77")
+theme_override_icons/down_pressed = SubResource("ImageTexture_4c57u")
+theme_override_icons/down_disabled = SubResource("ImageTexture_efxa6")
+theme_override_styles/up_background = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/up_background_hovered = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/up_background_pressed = SubResource("StyleBoxEmpty_w48qg")
+theme_override_styles/up_background_disabled = SubResource("StyleBoxEmpty_lquwl")
+theme_override_styles/down_background = SubResource("StyleBoxEmpty_vivmo")
+theme_override_styles/down_background_hovered = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/down_background_pressed = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/down_background_disabled = SubResource("StyleBoxEmpty_7mycd")
+theme_override_styles/field_and_buttons_separator = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/up_down_buttons_separator = SubResource("StyleBoxEmpty_5vw27")
+min_value = 0.01
+step = 0.01
+value = 0.01
+allow_greater = true
+prefix = "$"
+custom_arrow_step = 1.0
+select_all_on_focus = true
+
+[node name="DeleteTransaction" type="Button" parent="." unique_id=1939223608]
+layout_mode = 2
+text = "Delete"
