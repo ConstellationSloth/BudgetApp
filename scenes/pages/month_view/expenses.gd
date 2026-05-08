@@ -1,8 +1,8 @@
 extends VBoxContainer
 class_name ExpenseView
 
-var expense_button_path = "res://pages/month_view/expense_button.tscn"
-var transaction_info_path = "res://pages/month_view/transaction_info.tscn"
+var expense_button_path = "uid://xdp8d6awchk7"
+var transaction_info_path = "uid://bnhhjdk5iqy7w"
 @onready var grid_container = $ScrollContainer/MarginContainer/HBoxContainer/GridContainer
 @onready var back_button = $HBoxContainer/BackButton
 @onready var title_label = $HBoxContainer/Title
