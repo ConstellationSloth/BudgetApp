@@ -13,7 +13,7 @@ config_version=5
 config/name="budget"
 run/main_scene="uid://ceppf51yyk4hb"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://08rmm70pnsng"
 
 [autoload]
 
