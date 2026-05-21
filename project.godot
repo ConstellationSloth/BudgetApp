@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="budget"
+config/name="BudgetApp"
 run/main_scene="uid://ceppf51yyk4hb"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/low_processor_mode=true
 config/icon="uid://08rmm70pnsng"
 
 [autoload]
